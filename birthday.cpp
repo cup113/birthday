@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
 	std::cin >> status;
 	std::cout << "name: ";
 	std::cin >> name;
-	cake(42, 14, 14, 2, "Sandy");
+	cake(width, height, age, status, name);
 	system("pause");
 	return 0;
 }
