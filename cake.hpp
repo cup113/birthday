@@ -32,7 +32,7 @@ lens[2][4] = {
  * @param status   The status of the candle (0: off, 1: on, 2: leaning)
  * @param name     The name of the person (length should be less than param "width")
  */
-void cake(int width=21, int height=10, int age=0, int status=1, char *name="") {
+void cake(int width=21, int height=10, int age=0, int status=1, const char *name="") {
 	int i, j,
 	candles_num = width / 7, // left/right: 1ch / width: 5ch / wrap: 2ch -> 7=1, 14=2, 21=3..
 	candles_gap = width % 7, // The total length of gap. 1fr + 2fr... + 1fr / round

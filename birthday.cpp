@@ -1,22 +1,12 @@
 #include "cake.hpp"
 
 int main(int argc, char **argv) {
-	int width,
-	height,
-	age,
-	status;
-	char name[20];
-	std::cout << "Width: ";
-	std::cin >> width;
-	std::cout << "Height: ";
-	std::cin >> height;
-	std::cout << "Age: ";
-	std::cin >> age;
-	std::cout << "Status: ";
-	std::cin >> status;
-	std::cout << "name: ";
-	std::cin >> name;
-	cake(width, height, age, status, name);
+	int width = 28,
+	height = 10,
+	age = 18,
+	status = 2;
+	std::string name = "Joe";
+	cake(width, height, age, status, name.c_str());
 	system("pause");
 	return 0;
 }
